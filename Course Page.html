@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeeNow - Home</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+<header>
+    <img src="teenow.png" alt="TeeNow logo" class="logo">
+</header>
+
+
+<nav>
+    <a href="home page.html">Home</a>
+    <a href="Book.html">Book</a>
+    <a href="Course Page.html">Courses</a>
+    <a href="profile.html">Profile</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+
+<button class="open-button btn-signup" onclick="openSignupForm()">Sign Up</button>
+<button class="open-button btn-login" onclick="openLoginForm()">Log In</button>
+
+
+<div class="form-popup" id="signupForm">
+  <form class="form-container">
+    <h2>Sign Up</h2>
+
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+
+    <button type="submit" class="btn">Sign Up</button>
+    <button type="button" class="btn cancel" onclick="closeSignupForm()">Close</button>
+  </form>
+</div>
+
+<div class="form-popup" id="loginForm">
+  <form class="form-container">
+    <h2>Log In</h2>
+
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+
+    <button type="submit" class="btn">Log In</button>
+    <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openSignupForm() {
+  document.getElementById("signupForm").style.display = "block";
+}
+
+function closeSignupForm() {
+  document.getElementById("signupForm").style.display = "none";
+}
+
+function openLoginForm() {
+  document.getElementById("loginForm").style.display = "block";
+}
+
+function closeLoginForm() {
+  document.getElementById("loginForm").style.display = "none";
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
