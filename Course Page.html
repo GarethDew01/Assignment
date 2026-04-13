@@ -22,6 +22,22 @@
     <a href="Contact.html">Contact</a>
 </nav>
 
+<h1>Courses</h1>
+
+<button type="button" class="collapsible">Royal County Down, Northern Ireland</button>
+<div class="content">
+  <p>There is always lively discussion about which golf course is better than another, but none is more passionate than the debate over the relative merits of Royal County Down and Royal Portrush. If you haven’t played either of them yet, we recommend a golf trip to Northern Ireland; you certainly won’t be disappointed.
+    Royal County Down Golf Club is at Newcastle, a little holiday town nestling at the feet of the majestic Mountains of Mourne. It’s an exhilarating location for a classic links golf course where the Bay of Dundrum sweeps out into the Irish Sea and where the mighty peak of Slieve Donard (3,000 ft.) casts its shadow over the town.
+</p>
+
+<img src="Portrush1.webp" alt="Newcastle" class="course-image" >
+<img src="Newcastle2.webp" alt="Newcastle" class="course-image" >
+<img src="Newcastle3.webp" alt="Newcastle" class="course-image" >
+
+
+</div>
+
+
 
 <button class="open-button btn-signup" onclick="openSignupForm()">Sign Up</button>
 <button class="open-button btn-login" onclick="openLoginForm()">Log In</button>
@@ -70,33 +86,19 @@ function closeLoginForm() {
   document.getElementById("loginForm").style.display = "none";
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
 </script>
 
