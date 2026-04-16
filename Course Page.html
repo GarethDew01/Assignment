@@ -456,6 +456,11 @@ function validateForm() {
       return false;
     }
 
+    if (players < 1) {
+        alert("You must book for at least 1 player");
+        return false;
+    }
+
     return true;
 
 }
