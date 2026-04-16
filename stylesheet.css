@@ -2,6 +2,7 @@ body {
 margin: 0;
 font-family: 'Segoe UI', sans-serif;
 background: #f4f6f8;
+font-size: 60px;
 }
 
 header {
@@ -193,12 +194,15 @@ background-color: rgb(5, 123, 17);
 color: #ffffff;
 cursor: pointer;
 padding: 18px;
-width: 100%;
+width: 80%;
+height:300px;
 border: none;
 text-align: left;
 outline: none;
-font-size: 15px;
+font-size: 40px;
+font-weight: bold;
 border-radius: 25px;
+margin: 40px;
 }
 
 .content {
@@ -273,4 +277,86 @@ border-radius: 5px;
 
 .form-container .cancel {
 background: red;
+}
+
+
+#kclub{
+    background-image: url("images/coverKClub.jpg");
+    background-size: cover;       
+    background-position: 20% 40%;
+    background-repeat: no-repeat;
+    offset: 200px;
+}
+
+#down{
+    background-image: url("images/coverDown.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bunion{
+     background-image: url("images/coverBunion.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#stewart{
+    background-image: url("images/coverStewart.jpg");
+    background-size: cover;       
+    background-position: 90% 0%;
+    background-repeat: no-repeat;
+}
+#rush{
+    background-image: url("images/coverRush.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#liffen{
+    background-image: url("images/coverliffen.jpg");
+    background-size: cover;       
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+}
+#louth{
+    background-image: url("images/coverlouth.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#dublin{
+    background-image: url("images/coverdublin.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#headOld{
+    background-image: url("images/headOld.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#adare{
+    background-image: url("images/coverAdare.jpg");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.courses-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.courses-main {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
 }
