@@ -2,7 +2,7 @@ body {
 margin: 0;
 font-family: 'Segoe UI', sans-serif;
 background: #f4f6f8;
-font-size: 60px;
+font-size: 20px;
 }
 
 header {
@@ -356,7 +356,8 @@ background: red;
 
 .sidebar {
     flex: 1;
-    background: white;
+    background: green;
     padding: 20px;
     border-radius: 12px;
+    color: white;
 }
