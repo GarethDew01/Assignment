@@ -21,24 +21,74 @@
     <a href="faq.html">FAQ'S</a>
 </nav>
 
-<h2>How can we help?</h2>
+<h1 style = "color: grey; font-weight: lighter;">How can we help?</h1>
 
-<button type = "button" class = "collapsible">Can I cancel or change my booking?</button>
-<div class = "content">
-    <p>Bookings can be changed or cancelled. Contact us through the contact page atlest 24 hours before your tee time.</p>
+<button type="button" class="collapsible" style="font-weight: lighter;">Can I cancel or change my booking?</button>
+<div class="content">
+    <p style="font-weight: lighter;">Bookings can be changed or cancelled. Contact us through the contact page atlest 24 hours before your tee time.</p>
 </div>
-<button type = "button" class = "collapsible">How do I book a golf course?</button>
-<div class = "content">
-    <p>You can book a course by visiting the Courses pages, selecting your preferred course, and clicking the "Book Now" button.</p>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">How do I book a golf course?</button>
+<div class="content">
+    <p style="font-weight: lighter;">You can book a course by visiting the Courses pages, selecting your preferred course, and clicking the "Book Now" button.</p>
 </div>
-<button type = "button" class = "collapsible">Do I need to pay in advance?</button>
-<div class = "content">
-    <p>All payments are accepted on arrival at the Golf course.</p>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">Do I need to pay in advance?</button>
+<div class="content">
+    <p style="font-weight: lighter;">All payments are accepted on arrival at the Golf course.</p>
 </div>
-<button type = "button" class = "collapsible">Can I cancel or change my booking?</button>
-<div class = "content">
-    <p>Prices can very due to either the Time of day, Day of the Week or Season your book my phone is made
-    </p>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">Can I cancel or change my booking?</button>
+<div class="content">
+    <p style="font-weight: lighter;">Prices can very due to either the Time of day, Day of the Week or Season your book my phone is made</p>
 </div>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">Can I book by phone instead of online?</button>
+<div class="content">
+    <p style="font-weight: lighter;">Yes, some bookings can also be made by phone. Contact our support team or the golf course directly if you would prefer to book this way.</p>
+</div>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">What time should I arrive before my tee time?</button>
+<div class="content">
+    <p style="font-weight: lighter;">We recommend arriving at least 20 to 30 minutes before your scheduled tee time to allow for check-in and preparation.</p>
+</div>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">Can I book for multiple players?</button>
+<div class="content">
+    <p style="font-weight: lighter;">Yes, you can book tee times for multiple players, depending on availability at the selected course. Just choose the number of players when making your booking.</p>
+</div>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">Will I receive a booking confirmation?</button>
+<div class="content">
+    <p style="font-weight: lighter;">Yes, once your booking is completed, a confirmation email will be sent to your registered email address with all the details of your reservation.</p>
+</div>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">What happens if the weather is bad?</button>
+<div class="content">
+    <p style="font-weight: lighter;">Weather policies vary by golf course. In the event of severe weather or course closure, the golf club may offer a refund, voucher, or alternative tee time.</p>
+</div>
+
+<button type="button" class="collapsible" style="font-weight: lighter;">Can I hire golf equipment at the course?</button>
+<div class="content">
+    <p style="font-weight: lighter;">Many golf courses offer equipment hire such as clubs, buggies, and trolleys. Availability varies, so we recommend checking with the course before arrival.</p>
+</div>
+
 </body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </html>
