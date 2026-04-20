@@ -38,7 +38,7 @@
 
 <button class="open-button" onclick="openForm('royal county form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="royal county form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -82,7 +82,7 @@
 
 <button class="open-button" onclick="openForm('portrush form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="portrush form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -126,7 +126,7 @@
 
 <button class="open-button" onclick="openForm('portstewart form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="portstewart form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -171,7 +171,7 @@
 
 <button class="open-button" onclick="openForm('bally form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="bally form">
   <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -216,7 +216,7 @@
 
 <button class="open-button" onclick="openForm('Louth form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="Louth form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -262,7 +262,7 @@
 
 <button class="open-button" onclick="openForm('Dublin form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="Dublin form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -307,7 +307,7 @@
 
 <button class="open-button" onclick="openForm('Old form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="Old form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -352,7 +352,7 @@
 
 <button class="open-button" onclick="openForm('adare form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="adare form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -398,7 +398,7 @@
 
 <button class="open-button" onclick="openForm('ballyb form')">Book Now</button>
 
-
+<div class="form-overlay"></div>
 <div class="form-popup" id="ballyb form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
@@ -443,8 +443,8 @@
 
 <button class="open-button" onclick="openForm('kClub form')">Book Now</button>
 
-
-<div class="form-popup" id="ballyb form">
+<div class="form-overlay"></div>
+<div class="form-popup" id="kClub form">
     <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
     <h1>Book Now</h1>
 
@@ -513,10 +513,12 @@ for (i = 0; i < coll.length; i++) {
 
 function openForm(formId) {
   document.getElementById(formId).style.display = "block";
+  document.querySelector(".form-overlay").style.display = "block";
 }
 
 function closeForm(formId) {
   document.getElementById(formId).style.display = "none";
+    document.querySelector(".form-overlay").style.display = "none";
 }
 
 </script>

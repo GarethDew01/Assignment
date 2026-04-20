@@ -21,26 +21,41 @@
     <a href="faq.html">FAQ'S</a>
 </nav>
 
+<div class="welcome">
+  <h1>
+    Welcome to TeeNow!
+  </h1>
+  <p>
+    The only golf booking website you will ever need. We have a wide range of golf courses available for booking, including some of the most prestigious courses in Ireland. Whether you're a seasoned golfer or just starting out, we have something for everyone. Browse our selection of courses and book your tee time today!
+  </p>
+</div>
 
 <div class="slideshow-container">
 
    
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="druids-glen.png" style="width:100%">
-      <div class="text">Druids Glen Course</div>
+      <a href="Course Page.html">
+      <img src="images/Portrush1.webp" style="width:100%">
+      </a>
+      <div class="text">Royal County Down</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="powerscourt-golf-club.png" style="width:100%">
-      <div class="text">Powerscourt Golf Course</div>
+      <a href="Course Page.html">
+      <img src="images/Port1.webp" style="width:100%">
+      </a>
+      <div class="text">Portrush Golf Course</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="european-club.png" style="width:100%">
-      <div class="text">European Club</div>
+        <a href="Course Page.html">
+      <img src="images/adare1.webp" style="width:100%">
+      </a>
+      <div class="text">Adare Golf Club</div>
+  
     </div>
   
 
@@ -66,12 +81,11 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
