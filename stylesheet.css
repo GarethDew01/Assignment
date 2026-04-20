@@ -207,6 +207,12 @@ font-size: 40px;
 font-weight: bold;
 border-radius: 25px;
 margin: 40px;
+transition: 150ms ease
+
+}
+
+.collapsible:hover{
+    transform:scale(1.02);
 }
 
 .content {
@@ -380,9 +386,20 @@ background: red;
     color: white;
 }
 
-#welcomeMessage{
+h1{
     text-align: center;
     background-color: #045403;
     color: white;
+    
+}
+
+#introduction{
+    text-align: center;
+    font-size: 30px;
+}
+
+.faqContent{
+    margin: 30px;
+    font-size: 40px;
     
 }
