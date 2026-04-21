@@ -21,7 +21,7 @@
     <a href="faq.html">FAQ'S</a>
 </nav>
 
-<h2>Courses</h2>
+<h1>Courses</h1>
 <div class = "courses-layout">
 <div class = "courses-main">
 <button type="button" class="collapsible" id = "down">Royal County Down, Northern Ireland
@@ -32,9 +32,9 @@
     Royal County Down Golf Club is at Newcastle, a little holiday town nestling at the feet of the majestic Mountains of Mourne. It’s an exhilarating location for a classic links golf course where the Bay of Dundrum sweeps out into the Irish Sea and where the mighty peak of Slieve Donard (3,000 ft.) casts its shadow over the town.
 </p>
 
-<img src="Portrush1.webp" alt="Newcastle Golf Club" class="course-image" >
-<img src="Newcastle2.webp" alt="Newcastle Golf Club" class="course-image" >
-<img src="Newcastle3.webp" alt="Newcastle Golf Club" class="course-image" >
+<img src="images/Portrush1.webp" alt="Newcastle Golf Club" class="course-image" >
+<img src="images/Newcastle2.webp" alt="Newcastle Golf Club" class="course-image" >
+<img src="images/Newcastle3.webp" alt="Newcastle Golf Club" class="course-image" >
 
 <button class="open-button" onclick="openForm('royal county form')">Book Now</button>
 
@@ -478,8 +478,22 @@
 </aside>
 </div>
 
+<footer>
+  <h3>Check Out Our Socials!!</h3>
+<div>
+  <a href = "instagram.com"><img src = "images/instaLogo.png" class = "socials"></a>
+  <a href = "facebook.com"><img src = "images/facebookLogo.png" class = "socials"></a>
+  <a href = "x.com"><img src = "images/xLogo.png" class = "socials"></a>
+
+</div>  
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <script>
+
+  // Validation for the amount of Players you can input within the Booking Form
 function validateForm() {
     let players = document.getElementById("players").value;
     if (players > 4) {
@@ -493,24 +507,18 @@ function validateForm() {
     }
 
     return true;
-
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
+//Jquery Animation for Course Page Cards
+$(document).ready(function () {
+  $(".collapsible").click(function () {
+    $(this).toggleClass("active");
+    $(this).next(".content").stop(true, true).slideToggle(300);
   });
-}
+});
 
+//Functions for Opening and Closing the Form
 function openForm(formId) {
   document.getElementById(formId).style.display = "block";
   document.querySelector(".form-overlay").style.display = "block";
@@ -518,9 +526,8 @@ function openForm(formId) {
 
 function closeForm(formId) {
   document.getElementById(formId).style.display = "none";
-    document.querySelector(".form-overlay").style.display = "none";
+  document.querySelector(".form-overlay").style.display = "none";
 }
-
 </script>
 
 </body>

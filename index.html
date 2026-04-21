@@ -22,13 +22,16 @@
 </nav>
 
 <div class="welcome">
-  <h1>
-    Welcome to TeeNow!
+  <h1 id = "welcomeMessage">
+    Book Irelands Greatest Golf Courses
   </h1>
-  <p>
-    The only golf booking website you will ever need. We have a wide range of golf courses available for booking, including some of the most prestigious courses in Ireland. Whether you're a seasoned golfer or just starting out, we have something for everyone. Browse our selection of courses and book your tee time today!
+  <p id = "introduction">
+    Discover Diversity with Prestigious Golf Courses in Ireland. We have a wide range of golf courses available for booking, including some of the most prestigious courses in Ireland. Whether you're a seasoned golfer or just starting out, we have something for everyone. Browse our selection of courses and book your tee time today!
   </p>
 </div>
+
+<!--A hero button will help attract users into viewing more about the website-->
+<a href="Course Page.html" id="heroButton">Browse Courses</a>
 
 <div class="slideshow-container">
 
@@ -57,6 +60,7 @@
       <div class="text">Adare Golf Club</div>
   
     </div>
+    
   
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -72,12 +76,55 @@
   </div>
 
 
+  <section class="featured-courses">
+  <h1>Featured Courses</h1>
+  <div class="featured-grid">
+    <div class="featured-card">
+      <h3>Royal County Down</h3>
+      <p>Championship links course with incredible coastal views.</p>
+      <img src="images/Portrush1.webp" alt="Royal County Down">
+    </div>
+
+    <div class="featured-card">
+      <h3>Royal Portrush</h3>
+      <p>One of the most famous golf destinations in Ireland.</p>
+      <img src="images/Port1.webp" alt="Royal Portrush">
+    </div>
+
+    <div class="featured-card">
+      <h3>Adare Manor</h3>
+      <p>Luxury golf in one of Ireland’s most elegant settings.</p>
+      <img src="images/adare1.webp" alt="Adare Manor">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h3>Check Out Our Socials!!</h3>
+<div>
+  <a href = "instagram.com"><img src = "images/instaLogo.png" class = "socials"></a>
+  <a href = "facebook.com"><img src = "images/facebookLogo.png" class = "socials"></a>
+  <a href = "x.com"><img src = "images/xLogo.png" class = "socials"></a>
+
+</div>  
+
+</footer>
+
+
+
+
+
+
 
 <script>
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
+//Autoslide
+setInterval(function () {
+  plusSlides(1);
+}, 4000);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);

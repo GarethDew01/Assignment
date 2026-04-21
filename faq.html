@@ -21,24 +21,83 @@
     <a href="faq.html">FAQ'S</a>
 </nav>
 
-<h2>How can we help?</h2>
+<h1>How can we help?</h1>
 
-<button type = "button" class = "collapsible">Can I cancel or change my booking?</button>
-<div class = "content">
-    <p>Bookings can be changed or cancelled. Contact us through the contact page atlest 24 hours before your tee time.</p>
+<button type="button" class="collapsible" class = "faqContent">Can I cancel or change my booking?</button>
+<div class="content">
+    <p class = "faqContent">Bookings can be changed or cancelled. Contact us through the contact page atlest 24 hours before your tee time.</p>
 </div>
-<button type = "button" class = "collapsible">How do I book a golf course?</button>
-<div class = "content">
-    <p>You can book a course by visiting the Courses pages, selecting your preferred course, and clicking the "Book Now" button.</p>
+
+<button type="button" class="collapsible" class = "faqContent">How do I book a golf course?</button>
+<div class="content">
+    <p class = "faqContent">You can book a course by visiting the Courses pages, selecting your preferred course, and clicking the "Book Now" button.</p>
 </div>
-<button type = "button" class = "collapsible">Do I need to pay in advance?</button>
-<div class = "content">
-    <p>All payments are accepted on arrival at the Golf course.</p>
+
+<button type="button" class="collapsible" class = "faqContent">Do I need to pay in advance?</button>
+<div class="content">
+    <p class = "faqContent">All payments are accepted on arrival at the Golf course.</p>
 </div>
-<button type = "button" class = "collapsible">Can I cancel or change my booking?</button>
-<div class = "content">
-    <p>Prices can very due to either the Time of day, Day of the Week or Season your book my phone is made
-    </p>
+
+<button type="button" class="collapsible" class = "faqContent">Can I cancel or change my booking?</button>
+<div class="content">
+    <p class = "faqContent">Prices can very due to either the Time of day, Day of the Week or Season your book my phone is made</p>
 </div>
+
+<button type="button" class="collapsible" class = "faqContent">Can I book by phone instead of online?</button>
+<div class="content">
+    <p class = "faqContent">Yes, some bookings can also be made by phone. Contact our support team or the golf course directly if you would prefer to book this way.</p>
+</div>
+
+<button type="button" class="collapsible" class = "faqContent">What time should I arrive before my tee time?</button>
+<div class="content">
+    <p class = "faqContent">We recommend arriving at least 20 to 30 minutes before your scheduled tee time to allow for check-in and preparation.</p>
+</div>
+
+<button type="button" class="collapsible" class = "faqContent">Can I book for multiple players?</button>
+<div class="content">
+    <p class = "faqContent">Yes, you can book tee times for multiple players, depending on availability at the selected course. Just choose the number of players when making your booking.</p>
+</div>
+
+<button type="button" class="collapsible" class = "faqContent">Will I receive a booking confirmation?</button>
+<div class="content">
+    <p class = "faqContent">Yes, once your booking is completed, a confirmation email will be sent to your registered email address with all the details of your reservation.</p>
+</div>
+
+<button type="button" class="collapsible" class = "faqContent">What happens if the weather is bad?</button>
+<div class="content">
+    <p class = "faqContent">Weather policies vary by golf course. In the event of severe weather or course closure, the golf club may offer a refund, voucher, or alternative tee time.</p>
+</div>
+
+<button type="button" class="collapsible" class = "faqContent">Can I hire golf equipment at the course?</button>
+<div class="content">
+    <p class = "faqContent">Many golf courses offer equipment hire such as clubs, buggies, and trolleys. Availability varies, so we recommend checking with the course before arrival.</p>
+</div>
+
 </body>
+
+<footer>
+  <h5>Check Out Our Socials!!</h5>
+<div>
+  <a href = "instagram.com"><img src = "images/instaLogo.png" class = "socials"></a>
+  <a href = "facebook.com"><img src = "images/facebookLogo.png" class = "socials"></a>
+  <a href = "x.com"><img src = "images/xLogo.png" class = "socials"></a>
+
+</div>  
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function () {
+  $(".content").hide();
+
+  $(".collapsible").click(function () {
+    $(this).toggleClass("active");
+    $(this).next(".content").stop(true, true).slideToggle(300);
+  });
+});
+</script>
+
+
 </html>
