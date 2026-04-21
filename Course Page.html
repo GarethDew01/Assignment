@@ -41,7 +41,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="royal county form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -85,7 +85,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="portrush form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -129,7 +129,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="portstewart form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -174,7 +174,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="bally form">
-  <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -219,7 +219,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="Louth form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -265,7 +265,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="Dublin form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -310,7 +310,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="Old form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -355,7 +355,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="adare form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -401,7 +401,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="ballyb form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -446,7 +446,7 @@
 
 <div class="form-overlay"></div>
 <div class="form-popup" id="kClub form">
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm()">
+    <form action="/submit-form" method="post" enctype="text/plain" class="form-container" onsubmit="return validateForm() && confirmBooking()">
     <h1>Book Now</h1>
 
     <label for="First Name"><b>First Name</b></label>
@@ -508,6 +508,12 @@ function validateForm() {
     }
 
     return true;
+}
+
+// Alert to confirm the booking has been submitted
+function confirmBooking() {
+   alert("Your booking has been submitted! We will be in touch with you shortly to confirm the details.");
+   return false;
 }
 
 
