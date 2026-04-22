@@ -123,13 +123,13 @@
 
 <script>
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
 //Autoslide
 setInterval(function () {
   plusSlides(1);
 }, 4000);
+
+let slideIndex = 1;
+showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
