@@ -4,7 +4,17 @@ font-family: 'Segoe UI', sans-serif;
 background: #f4f6f8;
 font-size: 20px;
 }
+footer {
+text-align: center;
+padding: 25px;
+background: rgb(5, 123, 17);
+color: white;
+width: 100%;
+position: fixed;
+bottom: 0;
+}
 
+/* Navigation Panel */
 header {
 text-align: center;
 padding: 15px;
@@ -35,7 +45,7 @@ nav a:hover {
 text-decoration: underline;
 }
 
-
+/* Home Screen Slideshow */
 .slideshow-container {
 width: 100%;
 height: 400px;
@@ -72,8 +82,6 @@ transition: 150ms ease;
 .slideshow-container:hover{
     transform: scale(1.15)
 }
-
-
 
 .mySlides {
 display: none;
@@ -142,6 +150,8 @@ from {opacity: .4}
 to {opacity: 1}
 }
 
+
+/* Contact Page */
 .contact {
 padding: 20px;
 max-width: 1000px;
@@ -155,18 +165,6 @@ margin: 20px;
 
 }
 
-
-
-footer {
-text-align: center;
-padding: 25px;
-background: rgb(5, 123, 17);
-color: white;
-width: 100%;
-position: fixed;
-bottom: 0;
-}
-
 .contact-layout {
 display: flex;
 align-items: center;
@@ -175,14 +173,14 @@ gap: 30px;
 margin: 40px;
 }
 
-
+/*Class for a div element on contact */
 .vLine {
 width: 2px;
 height: 300px;
 background-color: #ccc;
 }
 
-
+/* Contact Table */
 .contact-table {
 border-collapse: collapse;
 }
@@ -193,10 +191,13 @@ border: 1px solid #ddd;
 padding: 10px;
 }
 
+/* Styling for Map on Contact Page */
 iframe {
 border-radius: 10px;
 }
 
+
+/* Styling for all collapsible "cards" on the webpages Course Page and FAQ's*/
 .collapsible {
 background-color: rgb(5, 123, 17);
 color: #ffffff;
@@ -215,10 +216,12 @@ transition: 150ms ease
 
 }
 
+/*This is used for hover animations when hovering over the Cards*/
 .collapsible:hover{
     transform:scale(1.02);
 }
 
+/* class for div of both faqs and course page */
 .content {
 padding: 0 18px;
 display: none;
@@ -233,7 +236,7 @@ border-radius: 10px;
 }
 
 
-
+/* CSS for booking button on Course Page */
 .open-button {
 position: left 20px;
 bottom: 20px;
@@ -250,6 +253,7 @@ background-color: rgb(5, 123, 17);
 opacity: 1;
 }
 
+/*CSS for booking form on course page */
 .form-overlay {
     display: none; 
     position: fixed;
@@ -307,7 +311,7 @@ border-radius: 5px;
 background: red;
 }
 
-
+/* Background image styling for all cards on the Course Page*/
 #kclub{
     background-image: url("images/coverKClub.jpg");
     background-size: cover;       
@@ -372,6 +376,7 @@ background: red;
     background-repeat: no-repeat;
 }
 
+/* Used to style the layout of different courses on the Course Page */
 .courses-layout {
     display: flex;
     gap: 30px;
@@ -382,6 +387,7 @@ background: red;
     flex: 3;
 }
 
+/* Styling for the sidebar on the Course Page */
 .sidebar {
     flex: 1;
     background: green;
@@ -390,6 +396,7 @@ background: red;
     color: white;
 }
 
+/* Used to have consistent styling for all webpage titles */
 h1{
     text-align: center;
     background-color: #045403;
@@ -397,17 +404,20 @@ h1{
     
 }
 
+/* Styling for the introductory statement on the home page */
 #introduction{
     text-align: center;
     font-size: 30px;
 }
 
+/* General Styling for FAQ page */
 .faqContent{
     margin: 30px;
     font-size: 40px;
     
 }
 
+/* Styling for the "Browse Courses" button on the home screen */
 #heroButton {
   display: block;
   margin: 20px auto;  
@@ -422,10 +432,13 @@ h1{
   font-weight: bold;
   transition: 150ms ease;
 }
+
+/*Animations for the "Browse Courses" button" */
 #heroButton:hover{
     transform: scale(1.05)
 }
 
+/* General styling for all of the featured courses found at the bottom of the home page */
 .featured-grid{
     display: block;
   margin: 20px auto;  
@@ -437,6 +450,7 @@ h1{
   font-size: 30px;
 }
 
+/* Styling for the social logos at the bottom of the footer */
 .socials {
   height: 40px;
   width: 40px;
@@ -445,6 +459,7 @@ h1{
   transition: transform 150ms ease;
 }
 
+/* Animations for the logos on the footer */
 .socials:hover {
   transform: scale(1.15);
 }
